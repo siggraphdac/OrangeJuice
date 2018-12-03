@@ -1,1 +1,2 @@
-# OrangeJuice-WordPress-Theme
+# OrangeJuice
+*A simple portfolio WordPress Theme.*
