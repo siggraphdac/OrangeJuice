@@ -1,9 +1,9 @@
 /*
-Theme Name: Origins + Journeys
+Theme Name: OrangeJuice
 Author: DAC
 Author URI: http://siggrapharts.ning.com/
-Description: Theme for Origins and Journeys DAC show.
-Version: 1.02
+Description: A theme DAC shows.
+Version: 1.0
 Tags: education, entertainment, portfolio, dac, art
 */
 
@@ -12,8 +12,8 @@ html{
     margin-right: 15px;
     margin-left: 15px;
     font-family: 'Barlow', sans-serif;
-    background:  #000022 fixed url("img/background.svg");
-
+    /* background:  #000022 fixed url("img/background.svg"); */
+    background:  #101010;
 }
 
 body {
@@ -80,12 +80,20 @@ a{
 }
 
 header {
-    margin-top: 74px;
+    /* margin-top: 74px; */
     text-align: center;
 }
 
 #titles {
+    /* display: none; */
     display: inline-block;
+}
+
+#titles img{
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: contain;
 }
 
 header h1 {
@@ -99,12 +107,12 @@ header h2 {
 
 #single {
     margin-top: 60px;
-    border: 1px solid #1B75BC;
+    border: 1px solid #7910FD;
     padding: 20px;
 }
 
 #primary {
-    margin-top: 66px;
+    margin-top: 60px;
     text-shadow: 2px 2px 2px #000;
     max-width: 865px;
     margin-left: auto;
@@ -128,7 +136,7 @@ header h2 {
     font-weight: 500;
     font-style: italic;
     font-size: 14px;
-    box-shadow: 10px 10px #1B75BC;
+    box-shadow: 10px 10px #7910FD;
 }
 
 .post-item-title{
@@ -140,7 +148,7 @@ header h2 {
 }
 
 .page-item {
-    border: 1px solid #1B75BC;
+    border: 1px solid #7910FD;
     font-weight: 500;
     font-size: 18px;
     box-shadow: 10px 10px #fff;

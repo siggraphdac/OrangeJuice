@@ -39,7 +39,7 @@
             <?php $i++; endforeach; endif; ?>
     </div>
     
-    <?php if (strpos(get_the_content(), 'WORK DESCRIPTION') == false) : ?> 
+    <?php if (strpos(get_the_content(), 'ARTIST STATMENT') == false) : ?> 
         <h5 id="description-heading">Work Description</h5>
     <?php endif; ?>
     
