@@ -173,6 +173,10 @@ footer img{
     border: 1px white solid;
 }
 
+#image-gallery a:hover {
+    background-color: transparent;
+}
+
 .gallery-image-large{
     display: none;
 }

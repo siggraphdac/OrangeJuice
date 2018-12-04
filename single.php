@@ -12,7 +12,7 @@
         <h4 id="post-author"><?php the_author_link(); ?></h4>
     <?php endif; ?>
 
-    <?php if (strpos(get_the_content(), 'Images') == false && get_post_gallery() == true ) : ?> 
+    <?php if (get_post_gallery() == true ) : ?>
         <?php 
             $aStart = strpos(get_the_content(), "<h4>"); 
             $aStop = strpos(get_the_content(), "</h4>", $aStop); 
@@ -20,8 +20,10 @@
             echo $aText;
 
             add_filter( 'the_content', 'remove_author_name' );
-
         ?>
+    <?php endif; ?>
+
+    <?php if (strpos(get_the_content(), 'Images') == false && get_post_gallery() == true ) : ?> 
         <h5 id="gallery-heading">Images</h5>
     <?php endif; ?>
 
@@ -55,7 +57,7 @@
     
     <?php endif; ?>
     
-    <?php if (strpos(get_the_content(), 'Artist Statement') == false) : ?> 
+    <?php if (strpos(get_the_content(), 'Artist Statement') == false && get_the_content() != "") : ?> 
         <h5 id="description-heading">Artist Statement</h5>
     <?php endif; ?>
     
