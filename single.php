@@ -58,7 +58,7 @@
     <?php endif; ?>
     
     <?php if (strpos(get_the_content(), 'Artist Statement') == false && get_the_content() != "") : ?> 
-        <h5 id="description-heading">Artist Statement</h5>
+        <h5 id="description-heading">Artist Statement</h5> 
     <?php endif; ?>
     
     <?php the_content(); ?>
