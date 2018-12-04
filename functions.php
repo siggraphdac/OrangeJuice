@@ -30,4 +30,16 @@ function lb_to_auth_desc($content){
   return nl2br($content);
 }
 
+function remove_shortcode_from_singles( $content ) {
+  if ( is_single() ) {
+      $content = strip_shortcodes( $content );
+  }
+  return $content;
+}
+
+function remove_author_name( $content ) {
+  $content = preg_replace('/(<h4>.+?)+(<\/h4>)/i', '', $content);
+  return $content;
+}
+
 ?>

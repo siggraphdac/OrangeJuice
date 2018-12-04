@@ -7,6 +7,8 @@ Version: 1.0
 Tags: education, entertainment, portfolio, dac, art
 */
 
+/* TOP-LEVEL TAGS */
+
 html{
     color: #fff;
     margin-right: 15px;
@@ -67,10 +69,6 @@ a{
     text-decoration: none;
 }
 
-#single a:hover{
-    background-color: rgb(230, 38, 200);
-}
-
 header {
     text-align: center;
 }
@@ -88,10 +86,10 @@ footer img{
     margin-right: 20px;
 }
 
-#image-gallery img{
-    margin-right: 10px;
-    margin-top: 10px;
-    border: 1px white solid;
+/* IDs */
+
+#single a:hover{
+    background-color: rgb(230, 38, 200);
 }
 
 #titles {
@@ -119,7 +117,9 @@ footer img{
     margin-right: auto;
 }
 
-.nav-item{
+/* CLASSES */
+
+.nav-item {
     display: inline-block;
     position: relative;
     width: 150px;
@@ -128,11 +128,11 @@ footer img{
     margin-top: 20px;
 }
 
-.post-item:hover{
+.post-item:hover {
     box-shadow: 10px 10px #fff;
 }
 
-.post-item{
+.post-item {
     font-weight: 500;
     font-style: italic;
     font-size: 14px;
@@ -144,7 +144,6 @@ footer img{
     bottom: 15px;
     text-align: left;
     margin-left: 5px;
-    /* text-shadow: 2px 2px 1px #000, 0px 0px 0px #000, ; */
 }
 
 .page-item {
@@ -166,13 +165,17 @@ footer img{
     text-decoration: underline;
 }
 
+/* IMAGE GALLERY CLASSIC */
+
+#image-gallery img{
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 1px white solid;
+}
+
 .gallery-image-large{
     display: none;
 }
-
-/* .gallery-image-large-span img {
-    border: none !important;
-} */
 
 .gallery-image-large:target {
     display: block;
@@ -189,6 +192,39 @@ footer img{
 
 .gallery-image-large-span:target {
     display: none;
+}
+
+/* IMAGE GALLERY GUTENBERG */
+
+.wp-block-gallery img{
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 1px white solid;
+}
+
+.gallery-image-large{
+    display: none;
+}
+
+.gallery-image-large:target {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-bottom: -50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    max-height: 95%;
+    max-width: 95%;
+    box-shadow: 0px 0px 500px 100px black;
+}
+
+.gallery-image-large-span:target {
+    display: none;
+}
+
+.wp-block-embed {
+    margin-left: 0;
 }
 
 /* barlow-300 - latin */
