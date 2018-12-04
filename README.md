@@ -12,5 +12,5 @@
 - **Videos** in posts should automatically generate embed code when it's url is added. 
 
 ## Tips
-- To change post authors there must be more than 1 user with edit capabilities.
+- To change post authors there must be more than one user with edit capabilities.
 - Remember to turn on Permalink > Post Name

@@ -8,15 +8,16 @@
 
     <h3 id="post-title"><?php the_title(); ?></h3>
     
-    <h4 id="post-author"><?php the_author_link(); ?></h4>
+    <?php if (strpos(get_the_content(), '<h4>') == false) : ?> 
+        <h4 id="post-author"><?php the_author_link(); ?></h4>
+    <?php endif; ?>
 
-    <?php if (strpos(get_the_content(), 'IMAGES') == false) : ?> 
+    <?php if (strpos(get_the_content(), 'Images') == false && get_post_gallery() == true ) : ?> 
         <h5 id="gallery-heading">Images</h5>
     <?php endif; ?>
 
     <div id="image-gallery">
-        <?php  $galleries = get_post_galleries_images( $post ); 
-        ?> 
+        <?php $galleries = get_post_galleries_images( $post ); ?> 
     
         <?php if ( get_post_gallery() ) : 
             $gallery = get_post_gallery( get_the_ID(), false );
@@ -39,13 +40,13 @@
             <?php $i++; endforeach; endif; ?>
     </div>
     
-    <?php if (strpos(get_the_content(), 'ARTIST STATMENT') == false) : ?> 
-        <h5 id="description-heading">Work Description</h5>
+    <?php if (strpos(get_the_content(), 'Artist Statement') == false) : ?> 
+        <h5 id="description-heading">Artist Statement</h5>
     <?php endif; ?>
     
     <?php echo apply_filters('the_content',strip_shortcodes(get_the_content())); ?>
     
-    <?php if (strpos(get_the_content(), 'ARTIST BIO') == false) : ?> 
+    <?php if (strpos(get_the_content(), 'Artist Bio') == false) : ?> 
         <h5 id="bio-heading">Artist Bio</h5>    
         <div id="author-description"><?php the_author_meta('description'); ?></div>
     <?php endif; ?>
