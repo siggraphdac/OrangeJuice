@@ -3,6 +3,7 @@
 function ojsite_setup() {
   add_theme_support( 'title-tag' );
   add_theme_support( 'post-thumbnails' ); 
+  set_post_thumbnail_size( 150, 150 );
   show_admin_bar( false );
 }
 

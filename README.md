@@ -15,3 +15,4 @@
 - Don't forget to add a tagline under Settings > General. 
 - To change post authors there must be more than one user with edit capabilities.
 - Remember to turn on Permalink > Post Name
+- Dobule check thumbnail size is 150x150 under Settings > Media
