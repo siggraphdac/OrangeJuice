@@ -3,7 +3,7 @@ Theme Name: OrangeJuice
 Author: DAC
 Author URI: http://siggrapharts.ning.com/
 Description: A theme for DAC shows.
-Version: 1.2
+Version: 1.3
 Tags: education, entertainment, portfolio, dac, art
 */
 
@@ -148,7 +148,6 @@ footer img{
 
 .mainmenu li a:hover {
     text-decoration: rgb(230, 38, 200) underline;
-    /* background-color: #111111; */
 }
 
 .nav-item {
@@ -160,15 +159,24 @@ footer img{
     margin-top: 10px;
 }
 
-.post-item:hover {
-    box-shadow: 10px 10px #fff;
-}
-
 .post-item {
     font-weight: 500;
     font-style: italic;
     font-size: 14px;
     box-shadow: 10px 10px #7910FD;
+    /* border: 1px solid black; */
+}
+
+.post-item:hover {
+    box-shadow: 10px 10px #fff;
+}
+
+/* .post-item:visited {
+    border-color: #00EFFC;
+} */
+
+.post-item:active {
+    box-shadow: 10px 10px #E626C8;
 }
 
 .post-item-title{
@@ -176,6 +184,12 @@ footer img{
     bottom: 15px;
     text-align: left;
     margin-left: 5px;
+    text-shadow: 2px 2px 2px #000, 0px 0px 10px #000, 0px 0px 20px #000;
+    font-weight: bold;
+}
+
+.post-item-author{
+    font-weight: normal;
 }
 
 .page-item {
@@ -209,6 +223,14 @@ footer img{
     background-color: transparent;
 }
 
+img.gallery-image:hover{
+    box-shadow: -10px -10px rgb(230, 38, 200);
+}
+
+img.gallery-image-large:hover{
+    border-color: rgb(230, 38, 200) !important;
+}
+
 .gallery-image-large{
     display: none;
 }
@@ -232,7 +254,7 @@ footer img{
 
 /* IMAGE GALLERY GUTENBERG */
 
-.wp-block-gallery img{
+/* .wp-block-gallery img{
     margin-right: 10px;
     margin-top: 10px;
     border: 1px white solid;
@@ -257,7 +279,7 @@ footer img{
 
 .gallery-image-large-span:target {
     display: none;
-}
+} */
 
 .wp-block-embed {
     margin-left: 0;

@@ -11,7 +11,7 @@ foreach (get_pages() as $page) {
 if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <div class="nav-item post-item">
             <a href="<?php the_permalink(); ?>">
-                <div class="post-item-title"><?php the_title(); ?> by <?php the_author(); ?></div>
+                <div class="post-item-title"><?php the_title(); ?><br><br><span class="post-item-author"><?php the_author(); ?></span></div>
                 <?php if ( has_post_thumbnail() ) {
                     the_post_thumbnail( 'thumbnail' );
                 } ?>
