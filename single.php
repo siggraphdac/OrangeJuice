@@ -1,6 +1,13 @@
 <?php get_header(); ?>
 
 <div id="primary">
+
+<?php wp_nav_menu( array( 
+    'theme_location' => 'header-menu',
+    'container_class' => 'mainmenu' 
+    ) 
+); ?>
+
 <main id="single">
 
 <!-- START the Loop. -->

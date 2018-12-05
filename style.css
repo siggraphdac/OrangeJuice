@@ -2,8 +2,8 @@
 Theme Name: OrangeJuice
 Author: DAC
 Author URI: http://siggrapharts.ning.com/
-Description: A theme DAC shows.
-Version: 1.0
+Description: A theme for DAC shows.
+Version: 1.2
 Tags: education, entertainment, portfolio, dac, art
 */
 
@@ -80,6 +80,8 @@ footer{
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
+    margin-bottom: 60px;
+
 }
 
 footer img{
@@ -104,7 +106,7 @@ footer img{
 }
 
 #single {
-    margin-top: 60px;
+    margin-top: 30px;
     border: 1px solid #7910FD;
     padding: 20px;
 }
@@ -119,13 +121,43 @@ footer img{
 
 /* CLASSES */
 
+.mainmenu {
+    margin-top: 74px;
+}
+
+.mainmenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #333333; */
+    border:1px solid rgb(0, 239, 252);
+}
+
+.mainmenu li {
+    float: left;
+}
+
+.mainmenu li a {
+    display: block;
+    /* color: white; */
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.mainmenu li a:hover {
+    text-decoration: rgb(230, 38, 200) underline;
+    /* background-color: #111111; */
+}
+
 .nav-item {
     display: inline-block;
     position: relative;
     width: 150px;
     height: 150px;
     margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .post-item:hover {
@@ -162,7 +194,7 @@ footer img{
 }
 
 .page-item a:hover{
-    text-decoration: underline;
+    text-decoration: rgb(230, 38, 200) underline;
 }
 
 /* IMAGE GALLERY CLASSIC */
