@@ -45,7 +45,6 @@
                 $gallery = get_post_gallery( get_the_ID(), false );
                 $gids = explode(",", $gallery['ids']);
                 $i = 0;
-                // console_log($gallery);
                 foreach( $gallery['src'] as $src ) : 
             ?>
 
@@ -64,8 +63,8 @@
     
     <?php endif; ?>
     
-    <?php if (strpos(get_the_content(), 'Artist Statement') == false && get_the_content() != "") : ?> 
-        <h5 id="description-heading">Artist Statement</h5> 
+    <?php if (strpos(get_the_content(), 'Artist Statement') == false || strpos(get_the_content(), 'Project Synopsis') == false || strpos(get_the_content(), 'Project Description') == false && get_the_content() != "") : ?> 
+        <h5 id="description-heading">Description</h5> 
     <?php endif; ?>
     
     <?php the_content(); ?>
