@@ -16,3 +16,10 @@
 - To change post authors there must be more than one user with edit capabilities.
 - Remember to turn on Permalink > Post Name
 - Dobule check thumbnail size is 150x150 under Settings > Media
+- .htaccess settings for >2MB uploads:
+```
+php_value upload_max_filesize 128M
+php_value post_max_size 128M
+php_value max_execution_time 300
+php_value max_input_time 300
+```
