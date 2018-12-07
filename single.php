@@ -63,10 +63,6 @@
     
     <?php endif; ?>
     
-    <!-- <?php if (strpos(get_the_content(), 'Artist Statement') == false && strpos(get_the_content(), 'Project Synopsis') == false && strpos(get_the_content(), 'Project Description') == false && get_the_content() != "") : ?> 
-        <h5 id="description-heading">Description</h5> 
-    <?php endif; ?> -->
-    
     <?php the_content(); ?>
     
     <?php if (strpos(get_the_content(), 'Artist Bio') == false && the_author_meta('description') != false) : ?> 
